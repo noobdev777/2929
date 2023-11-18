@@ -1,7 +1,7 @@
-api_id = 24250238
-api_hash = "cb3f118ce5553dc140127647edcf3720"
-bot_token = "6253605770:AAF5qGr1wfNbdMUV743RjFnRSFfk4hoCaiU"
-auth_users = [6175650047,5615344987]
-sudo_user = -1002041893808
-log_channel = -1002088006042
-txt_channel = -1002088006042
+api_id = 20088962
+api_hash = "257f47d347157555890a64b12bc0134f"
+bot_token = "6637404094:AAE4fQhjdmBW8pbzGWWRCb6BgsqmYaYQM4M"
+auth_users = [6169016546]
+sudo_user = -1004008382140
+log_channel = -1002082838226
+txt_channel = -1002082838226
