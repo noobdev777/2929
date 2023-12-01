@@ -45,7 +45,7 @@ bot = Client(
     "bot",
     api_id= 20088962,
     api_hash= "257f47d347157555890a64b12bc0134f",
-    auth_users = [6169016546]
+    auth_users = 6169016546
     sudo_user = -1002059297194
     log_channel = -1002082838226
     txt_channel = -1002082838226
