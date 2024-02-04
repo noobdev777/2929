@@ -42,7 +42,7 @@ botStartTime = time.time()
 batch = []
 
 bot = Client("bot",
-             bot_token= "6743557600:AAF3XJS-eMy426laFRt8YCUJ0AupKnbdgk4",
+             bot_token= "6743557600:AAGdbZ-rgsgGBm85QXofKeUYBfk5fpRAv8I",
              api_id= 20088962,	     
              api_hash= "257f47d347157555890a64b12bc0134f"
 )
