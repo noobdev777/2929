@@ -40,16 +40,16 @@ from pyshorteners import Shortener
 
 botStartTime = time.time()
 batch = []
-bot = Client(
-    "bot",
-    api_id= 20088962,
-    api_hash= "257f47d347157555890a64b12bc0134f",
-    auth_users = "6169016546",    
-    log_channel = "-1001851582041", 
-    txt_channel = "-1001851582041", 
-    bot_token= "6778587387:AAFt5GDWxQjXXM6JX6MB1TTNKYPDivrvK4k")
+
+bot = Client("bot",
+             bot_token= "6778587387:AAFt5GDWxQjXXM6JX6MB1TTNKYPDivrvK4k",
+             api_id= 20088962,
+	     log_channel = "-1001851582041", 
+             txt_channel = "-1001851582041", 
+             api_hash= "257f47d347157555890a64b12bc0134f"
+)
       
-@bot.on_message(filters.command(["start"])&(filters.chat(auth_users)))
+@bot.on_message(filters.command(["start"]))
 async def start_handler(bot: Client, m: Message):        
         editable = await m.reply_text(
             "Hello 👋 **I am a simple video downloader bot**.\n\n**Developer** : Frigo\n**Language** : Python\n**Framework** : Pyrogram\n\n/txt - **To download from TXT file.**\n/terms - **To know our our terms and conditions.**")
@@ -91,7 +91,7 @@ def humanbytes(size):
         n += 1
     return f"{str(round(size, 2))} {Dic_powerN[n]}B"
 
-@bot.on_message(filters.command(["cpdf"])&(filters.chat(auth_users)))
+@bot.on_message(filters.command(["cpdf"]))
 async def c_pdf(bot: Client, m: Message):
     editable = await m.reply_text("**Hello I am CW pdf DL Bot\n\nSend TXT To Download.**")
     input99: Message = await bot.listen(editable.chat.id)
@@ -365,7 +365,7 @@ async def run_bot(bot: Client, m: Message):
         await m.reply_document(document=txt_file,caption="Here is your txt file.")
         os.remove(txt_file)
         
-@bot.on_message(filters.command(["txt"])&(filters.chat(auth_users)))
+@bot.on_message(filters.command(["txt"]))
 async def txt_handler(bot: Client, m: Message):
     
     if batch != []:
