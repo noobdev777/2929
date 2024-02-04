@@ -46,9 +46,9 @@ async def vision(url, name, cookies):
     return ka     
 
 
-def get_link(url):
-   urlx = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+',url)
-   return urlx[0]
+#def get_link(url):
+  # urlx = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+',url)
+   #return urlx[0]
 
 
 async def download(url, name):
