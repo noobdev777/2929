@@ -44,8 +44,7 @@ bot = Client(
     "bot",
     api_id= 20088962,
     api_hash= "257f47d347157555890a64b12bc0134f",
-    auth_users = "6169016546", 
-    sudo_user = "-1002059297194", 
+    auth_users = "6169016546",    
     log_channel = "-1001851582041", 
     txt_channel = "-1001851582041", 
     bot_token= "6778587387:AAFt5GDWxQjXXM6JX6MB1TTNKYPDivrvK4k")
